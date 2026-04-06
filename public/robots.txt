@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /admin
+Disallow: /api/
+Disallow: /cart
+Disallow: /checkout
+Disallow: /success
+
+Allow: /
+Allow: /shop
+Allow: /about
+Allow: /contact
+
+Sitemap: https://brighthouse.website/sitemap.xml
