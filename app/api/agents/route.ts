@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { runResearch } from "@/agents/agent1-research";
+import { runProductResearch as runResearch } from "@/agents/agent1-research";
 import { runPricing } from "@/agents/agent2-pricing";
 import { runInventory } from "@/agents/agent3-inventory";
 import { runOrderFulfillment } from "@/agents/agent4-fulfillment";
