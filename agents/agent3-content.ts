@@ -13,7 +13,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 const BATCH_SIZE = 5;
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
-article async function generateContent(product: any) {
+async function generateContent(product: any) {
   const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
   const prompt = `You are a professional e-commerce copywriter for BrightHome, a premium lighting & home decor store.
