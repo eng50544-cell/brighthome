@@ -30,7 +30,7 @@ export default function WishlistPage() {
             <div key={item.id} className="bg-white rounded-xl shadow overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src={item.images?.[0] || "/placeholder.jpg"}
+                  src={item.image || "/placeholder.jpg"}
                   alt={item.name}
                   fill
                   className="object-cover"
