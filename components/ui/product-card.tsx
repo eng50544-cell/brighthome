@@ -98,9 +98,9 @@ export default function ProductCard({ product }: ProductCardProps) {
         </div>
         <div className="p-4">
           <p className="text-dark-silver text-xs uppercase tracking-wider mb-1">{product.category}</p>
-          <h3 className="text-accent-silver font-semibold text-sm leading-tight mb-2 line-clamp-2 group-hover:text-gold-cta transition-colors">{content.name}</h3>
+          <h3 className="text-accent-silver font-semibold text-sm leading-tight mb-2 line-clamp-2 group-hover:text-gold-cta transition-colors">{product.name}</h3>
           <div className="flex items-center gap-2 mb-3"><StarRating rating={product.rating} /><span className="text-dark-silver text-xs">({product.reviews.toLocaleString()})</span></div>
-          <div className="flex items-center gap-2"><span className="text-gold-cta font-bold text-lg">${product.price.toFixed(2)}</span>{content.originalPrice && <span className="text-dark-silver text-sm line-through">${content.originalPrice.toFixed(2)}</span>}</div>
+          <div className="flex items-center gap-2"><span className="text-gold-cta font-bold text-lg">${product.price.toFixed(2)}</span>{product.originalPrice && <span className="text-dark-silver text-sm line-through">${product.originalPrice.toFixed(2)}</span>}</div>
         </div>
       </div>
     </Link>
