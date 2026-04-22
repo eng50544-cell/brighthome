@@ -41,7 +41,7 @@ export default function WishlistPage() {
                 <p className="text-blue-600 font-bold mt-1">${item.price}</p>
                 <div className="flex gap-2 mt-3">
                   <button
-                    onClick={() => addToCart(item)}
+                    onClick={() => addToCart({ ...item, quantity: 1 })}
                     className="flex-1 bg-blue-600 text-white py-2 rounded-lg text-sm hover:bg-blue-700"
                   >
                     Add to Cart
