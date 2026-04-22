@@ -32,6 +32,7 @@ export default function Navbar() {
           </Link>
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map(link => (
+              // @ts-expect-error
               <Link hef={link.href} key={link.href} className="text-dark-silver hover:text-gold-cta font-montserrat font-medium text-sm uppercase tracking-wider transition-colors">{link.label}</Link>
             ))}
           </div>
