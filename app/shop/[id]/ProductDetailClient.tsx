@@ -35,6 +35,7 @@ export default function ProductDetailClient({ product }: { product: Product }) {
         name: product.name,
         price: product.price,
         image: product.images[0],
+        quantity: 1,
       });
     }
   };
