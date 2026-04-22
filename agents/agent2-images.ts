@@ -71,7 +71,7 @@ async function run() {
   console.log('🤖 Agent 2: Image Processing Agent Starting...');
   await mongoose.connect(process.env.MONGODB_URI!);
   const Product = mongoose.model('Product', new mongoose.Schema({ name: String, images: [String], processed: Boolean, published: Boolean }, { strict: false }));
-  const products = await Product.find({ processed: false, isActive: true }).limit(BATCH^SIZE * 2);
+  const products = await Product.find({ processed: false, isActive: true }).limit(BATCH_SIZE * 2);
   let processed = 0;
   for (let i = 0; i < products.length; i += BATCH_SIZE) {
     await Promise.all(products.slice(i, i + BATCH_SIZE).map(async (product) => {
