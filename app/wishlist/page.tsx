@@ -5,8 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function WishlistPage() {
-  const { items, removeFromWishlist } = useWishlist();
-  const { addToCart } = useCart();
+  const { wishlist: items, removeFromWishlist } = useWishlist();
+  const { addItem: addToCart } = useCart();
 
   if (items.length === 0) {
     return (
