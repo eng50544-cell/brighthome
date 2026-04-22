@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Trash2, Plus, Minus, ShoppingBag, ArrowLeft } from "lucide-react";
 
 export default function CartPage() {
-  const { items, removeItem, updateQuantity, total, clearCart } = useCart();
+  const { state: { items, total }, removeItem, updateQty: updateQuantity, clearCart } = useCart();
 
   if (items.length === 0) {
     return (
