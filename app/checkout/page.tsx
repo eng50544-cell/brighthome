@@ -6,7 +6,7 @@ import Image from "next/image";
 import { CreditCard, MapPin, User, Mail, Phone, Lock } from "lucide-react";
 
 export default function CheckoutPage() {
-  const { items, total, clearCart } = useCart();
+  const { state: { items, total }, clearCart } = useCart();
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
