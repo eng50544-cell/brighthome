@@ -168,6 +168,7 @@ export default function ShopClient({ products, categories, total, page, limit }:
                               name: product.name,
                               price: product.price,
                               image: product.images?.[0],
+                              quantity: 1,
                             })}
                             className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 p-2.5 rounded-full transition-colors"
                           >
