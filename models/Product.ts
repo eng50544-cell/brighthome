@@ -71,6 +71,7 @@ const ProductSchema = new Schema<IProduct>(
     reviews: { type: Number, default: 0 },
     inStock: { type: Boolean, default: true },
     stockCount: { type: Number },
+    // @ts-ignore
     isNew: { type: Boolean, default: true },
     isFeatured: { type: Boolean, default: false },
     isActive: { type: Boolean, default: true },
